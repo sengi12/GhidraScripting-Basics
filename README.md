@@ -14,6 +14,7 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
   - [Get the current Program Name and Location on disk](#name-and-loc)
   - [Export a Local Copy](#export)
+  - [Get DataType from Ghidra](#getDataType)
 
   </details>
 
@@ -101,4 +102,26 @@ else:
 ```
 
 This will check to see whether or not the file exists, and if it returns `null` (like in a ghidra-server) it will prompt the user for a location to export, and export the file to that location using Ghidra's [BinaryExporter](https://ghidra.re/ghidra_docs/api/ghidra/app/util/exporter/BinaryExporter.html).
+
+### <a name="getDataType"></a>Get Data Type from Ghidra
+
+This is an edited version of a example provided by Ghidra as an example of GhidraScripting in python and is a great template for getting started with more complicated scripts.
+
+> To view this in Ghidra go to: **Window**, and select **Python**. This will open up a new interactive [Jython]() shell. From here click <kbd>F1</kbd> and you will be shown a new help window with the below code shown.
+
+```python
+import ghidra.app.script.GhidraScript
+def getDataType():
+    tool = state.getTool()
+    dtm = currentProgram.getDataTypeManager()
+    from ghidra.app.util.datatype import DataTypeSelectionDialog
+    from ghidra.util.data.DataTypeParser import AllowedDataTypes
+    selectionDialog = DataTypeSelectionDialog(tool, dtm, -1, AllowedDataTypes.FIXED_LENGTH)
+    tool.showDialog(selectionDialog)
+    dataType = selectionDialog.getUserChosenDataType()
+    # if dataType != None: print("Chosen data type: " + str(dataType))
+    if dataType != None: return dataType
+```
+
+
 
