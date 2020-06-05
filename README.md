@@ -14,6 +14,8 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 <details>
   <summary>Ghidra Scripting Examples</summary>
+
+
 - [Get the current Program Name and Location on disk](#name-and-loc)
 - [Export a Local Copy](#export)
 - [Get DataType from Ghidra](#getDataType)
