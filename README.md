@@ -12,7 +12,7 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 </details>
 
-[`Ghidra Scripting Examples`](#examples) 
+#### [Ghidra Scripting Examples](#examples) 
 
 <details>
   <summary>General</summary>
