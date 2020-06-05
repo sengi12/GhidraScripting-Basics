@@ -1,0 +1,1 @@
+/home/sengi/.ghidra/.ghidra_9.1.2_PUBLIC/dev/ghidra_scripts/bin/
