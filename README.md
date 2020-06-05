@@ -4,8 +4,11 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 ## <a name="toc"></a>Table Of Contents
 
+[Ghidra Script Basics](#basics) 
+
 <details>
-  <summary>GhidraScript Basics</summary>
+  <summary>An Introduction</summary>
+
 
 - [`Scripting Languages`](#languages)
 - [`Important Components`](#components)
@@ -35,7 +38,7 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 ---
 
-## <a name="basics"></a>GhidraScript Basics
+## <a name="basics"></a>Ghidra Script Basics
 
 The Ghidra API is your friend. For access within Ghidra, go to: "Help", and select "Ghidra API Help". This will take you to an interactive html page which provides everything you need to know in order to interact with the API. You can also go to this online version of the [GhidraAPI](ghidra.re/ghidra_docs/api/).
 
