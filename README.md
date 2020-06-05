@@ -7,18 +7,29 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 <details>
   <summary>GhidraScript Basics</summary>
 
-- [Scripting Languages](#languages)
-- [Important Components](#components)
+- [`Scripting Languages`](#languages)
+- [`Important Components`](#components)
+
+</details>
+
+[`Ghidra Scripting Examples`](#examples) 
+
+<details>
+  <summary>General</summary>
+
+
+
+- [`Get the Current Program Name and Location on disk`](#name-and-loc)
+- [`Export a Local Copy`](#export)
 
 </details>
 
 <details>
-  <summary>Ghidra Scripting Examples</summary>
+  <summary>Data Types</summary>
 
 
-- [Get the current Program Name and Location on disk](#name-and-loc)
-- [Export a Local Copy](#export)
-- [Get DataType from Ghidra](#getDataType)
+
+- [`Get DataType from Ghidra`](#getDataType)
 
 </details>
 
