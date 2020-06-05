@@ -5,6 +5,9 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 <details>
   <summary><h2 id="header">Table Of Contents</h2></summary>
 
+- <details>
+  <summary>[GhidraScript Basics](#basics)</summary>
+  
 - [GhidraScript Basics](#basics)
 
   - [Scripting Languages](#languages)
