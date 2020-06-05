@@ -1,8 +1,8 @@
-# GhidraScripting in a Nutshell
+# <a name="top"></a>GhidraScripting in a Nutshell
 
 If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a great reference can be found at [GhidraSnippets](https://github.com/cetfor/GhidraSnippets) (Authored by [John Toterhi](https://github.com/cetfor)). This will act as a living document of my interpretation of the [GhidraAPI](ghidra.re/ghidra_docs/api/). 
 
-## Table Of Contents
+## <a name="toc"></a>Table Of Contents
 
 <details>
   <summary>GhidraScript Basics</summary>
@@ -50,6 +50,8 @@ In order for Ghidra scripts to work in Python, the file that is run must import 
 import ghidra.app.script.GhidraScript
 ```
 
+[:arrow_up:Back to Top](#top)​ 
+
 ### <a name="components"></a>Important Components
 
 There are two components of the [GhidraAPI](ghidra.re/ghidra_docs/api/) that are the most important to understand when writing GhidraScripts. 
@@ -58,6 +60,8 @@ There are two components of the [GhidraAPI](ghidra.re/ghidra_docs/api/) that are
 - [FlatProgramAPI](https://ghidra.re/ghidra_docs/api/ghidra/program/flatapi/FlatProgramAPI.html) 
 
 The main reasons being that when writing GhdiraScripts, you can call all the functions within these two classes without any additional imports.
+
+[:arrow_up:Back to Top](#top) 
 
 ## <a name="examples"></a>Ghidra Scripting Examples
 
@@ -73,6 +77,8 @@ location = currentProgram.getExecutablePath()
 print("The currently loaded program is: '{}'".format(name))
 print("Its location on disk is: '{}'".format(location))
 ```
+
+[:arrow_up:Back to Top](#top) 
 
 ### <a name="export"></a>Export a Local Copy
 
@@ -107,6 +113,8 @@ else:
 
 This will check to see whether or not the file exists, and if it returns `null` (like in a ghidra-server) it will prompt the user for a location to export, and export the file to that location using Ghidra's [BinaryExporter](https://ghidra.re/ghidra_docs/api/ghidra/app/util/exporter/BinaryExporter.html).
 
+[:arrow_up:Back to Top](#top) 
+
 ### <a name="getDataType"></a>Get Data Type from Ghidra
 
 This is an edited version of a example provided by Ghidra as an example of GhidraScripting in python and is a great template for getting started with more complicated scripts.
@@ -127,5 +135,5 @@ def getDataType():
     if dataType != None: return dataType
 ```
 
-
+[:arrow_up:Back to Top](#top) 
 
