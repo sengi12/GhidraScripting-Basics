@@ -2,24 +2,23 @@
 
 If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a great reference can be found at [GhidraSnippets](https://github.com/cetfor/GhidraSnippets) (Authored by [John Toterhi](https://github.com/cetfor)). This will act as a living document of my interpretation of the [GhidraAPI](ghidra.re/ghidra_docs/api/). 
 
+## Table Of Contents
+
 <details>
-  <summary><h2 id="header">Table Of Contents</h2></summary>
+  <summary>GhidraScript Basics</summary>
 
-- <details>
-  <summary>[GhidraScript Basics](#basics)</summary>
-  
-- [GhidraScript Basics](#basics)
+- [Scripting Languages](#languages)
+- [Important Components](#components)
 
-  - [Scripting Languages](#languages)
-  - [Important Components](#components)
+</details>
 
--  [Ghidra Scripting Examples](#examples)
+<details>
+  <summary>Ghidra Scripting Examples</summary>
+- [Get the current Program Name and Location on disk](#name-and-loc)
+- [Export a Local Copy](#export)
+- [Get DataType from Ghidra](#getDataType)
 
-  - [Get the current Program Name and Location on disk](#name-and-loc)
-  - [Export a Local Copy](#export)
-  - [Get DataType from Ghidra](#getDataType)
-
-  </details>
+</details>
 
 ---
 
