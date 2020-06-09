@@ -106,6 +106,8 @@ gradle -PGHIDRA_INSTALL_DIR=/home/user/bin/ghidra/ghidra_9.1.2_PUBLIC
 
 > Be sure to replace `/home/user/bin/ghidra_9.1.2_PUBLIC` with the root folder of your specific Ghidra installation.
 
+[:arrow_up:Back to Top](#top) 
+
 ### <a name="compilation"></a>Compiling Your GhidraScript for Testing
 
 Ghidra Scripts are <u>**not**</u> automatically recompiled at runtime. This means that in order for you to make sure your live changes actually get applied at runtime, you need to delete the related `.class` files that Ghidra generates at compilation. Ghidra stores these class files in a directory labeled `bin` located within the `/.ghidra/` directory (**<u>NOTICE</u>** the `.` at the beginning making it a hidden folder). I have found that a clean way to do this is with a python script, `cleanup`, which looks for a file within the same directory called `ghidra_bin_location.txt`. Our python script expects the `txt` file to contain a utf-8 encoding of your specific bin location where the `.class` files are generated. The python script then will delete every `.class` file within the directory that matches the structure of your project.  `ghidra_bin_location.txt` must exist and contain the ghidra bin folder location for it to work properly. 
@@ -144,6 +146,8 @@ for item in o:
 ```
 
 > Notice that this will only look for files in your projects root directory. In order for this to work with a nested directory structure, you will have to modify it.
+
+[:arrow_up:Back to Top](#top) 
 
 ### <a name="auto-compile"></a>Automating Compilation in Ghidra
 
