@@ -19,8 +19,9 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
   <summary>Development Tips</summary>
 
 
-- [`Compilation`](#compilation)
-- [`Automating Compilation in Ghidra`](#auto-compile)
+- [`Compiling External Extensions/Plugins`](#compiling-extensions)
+- [`Compiling Your GhidraScript for Testing`](#compilation)
+- [`Automating Compilation in Ghidra for Testing`](#auto-compile)
 
 </details>
 
@@ -42,6 +43,7 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 
 - [`Get DataType from Ghidra`](#getDataType)
+- [`Create Custom DataType`](#custom-DT)
 
 </details>
 
@@ -94,7 +96,17 @@ The main reasons being that when writing GhdiraScripts, you can call all the fun
 
 Below are some tips on how you could get started developing your own GhidraScript projects.
 
-### <a name="compilation"></a>Compilation
+### <a name="compiling-extensions"></a>Compiling External Extension/Plugins
+
+Ghidra is a very extensible tool and offers a lot of room to grow with external tools. Sometimes, the repository you grab from will be without the most up to date version of Ghidra which could cause some issues if that's what you're using. In order to compile these yourself, simply run the following script in the "external tool's" root directory (the directory with the `build.gradle` file):
+
+```bash
+gradle -PGHIDRA_INSTALL_DIR=/home/user/bin/ghidra/ghidra_9.1.2_PUBLIC
+```
+
+> Be sure to replace `/home/user/bin/ghidra_9.1.2_PUBLIC` with the root folder of your specific Ghidra installation.
+
+### <a name="compilation"></a>Compiling Your GhidraScript for Testing
 
 Ghidra Scripts are <u>**not**</u> automatically recompiled at runtime. This means that in order for you to make sure your live changes actually get applied at runtime, you need to delete the related `.class` files that Ghidra generates at compilation. Ghidra stores these class files in a directory labeled `bin` located within the `/.ghidra/` directory (**<u>NOTICE</u>** the `.` at the beginning making it a hidden folder). I have found that a clean way to do this is with a python script, `cleanup`, which looks for a file within the same directory called `ghidra_bin_location.txt`. Our python script expects the `txt` file to contain a utf-8 encoding of your specific bin location where the `.class` files are generated. The python script then will delete every `.class` file within the directory that matches the structure of your project.  `ghidra_bin_location.txt` must exist and contain the ghidra bin folder location for it to work properly. 
 
@@ -254,3 +266,8 @@ def getDataType():
 
 [:arrow_up:Back to Top](#top) 
 
+### <a name="custom-DT"></a>Create Custom DataType
+
+
+
+[:arrow_up:Back to Top](#top) 
