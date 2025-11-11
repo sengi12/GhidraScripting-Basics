@@ -1,6 +1,6 @@
 # <a name="top"></a>GhidraScripting in a Nutshell
 
-If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a great reference can be found at [GhidraSnippets](https://github.com/cetfor/GhidraSnippets) (Authored by [John Toterhi](https://github.com/cetfor)). This will act as a living document of my interpretation of the [GhidraAPI](ghidra.re/ghidra_docs/api/). 
+If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a great reference can be found at [GhidraSnippets](https://github.com/cetfor/GhidraSnippets) (Authored by [John Toterhi](https://github.com/cetfor)). This will act as a living document of my interpretation of the [GhidraAPI](https://ghidra.re/ghidra_docs/api/). 
 
 ## <a name="toc"></a>Table Of Contents
 
@@ -53,7 +53,7 @@ If you are just getting into scripting with [Ghidra](https://ghidra-sre.org), a 
 
 ### An Introduction
 
-The Ghidra API is your friend. For access within Ghidra, go to: "Help", and select "Ghidra API Help". This will take you to an interactive html page which provides everything you need to know in order to interact with the API. You can also go to this online version of the [GhidraAPI](ghidra.re/ghidra_docs/api/).
+The Ghidra API is your friend. For access within Ghidra, go to: "Help", and select "Ghidra API Help". This will take you to an interactive html page which provides everything you need to know in order to interact with the API. You can also go to this online version of the [GhidraAPI](https://ghidra.re/ghidra_docs/api/).
 
 > Note that all of the references I make to the Ghidra docs will be to `ghidra.re` which may not be up to date. 
 
@@ -81,7 +81,7 @@ import ghidra.app.script.GhidraScript
 
 ### <a name="components"></a>Important Components
 
-There are two components of the [GhidraAPI](ghidra.re/ghidra_docs/api/) that are the most important to understand when writing GhidraScripts. 
+There are two components of the [GhidraAPI](https://ghidra.re/ghidra_docs/api/) that are the most important to understand when writing GhidraScripts. 
 
 - [GhidraScript](https://ghidra.re/ghidra_docs/api/ghidra/app/script/GhidraScript.html) 
 - [FlatProgramAPI](https://ghidra.re/ghidra_docs/api/ghidra/program/flatapi/FlatProgramAPI.html) 
