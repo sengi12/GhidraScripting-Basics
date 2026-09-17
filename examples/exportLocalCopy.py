@@ -1,4 +1,11 @@
 # Author: Michael Sengelmann
+# Export a local copy of the current program when it does not exist on disk
+# (for example when it lives on a Ghidra Server).
+# Jython (Python 2.7) version - legacy. Ghidra 12.x only runs this after you
+# install the "Jython" extension (File -> Install Extensions). See
+# examples/pyghidra/exportLocalCopy.py for the CPython 3 port.
+# @category Examples.Python
+# @runtime Jython
 import ghidra.app.script.GhidraScript
 
 state = getState()
